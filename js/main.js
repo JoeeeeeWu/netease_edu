@@ -10,8 +10,6 @@ window.onload=function(){
         for(var i=0;i<_ctrls.length;i++){
             _ctrls[i].index = i;
             _ctrls[i].onclick = function(){
-                clearInterval(_timer);
-                _timer = setInterval(autoPlay,3000);
                 _iNow = this.index;
                 toShow();
             };
